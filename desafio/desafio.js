@@ -1,14 +1,13 @@
 const readline = require('readline-sync');
 const Forca = require('./forca');
 
-const jogo = new Forca('abacaxi'); // * Criação do objeto abacaxi que pertence a classe força
+const jogo = new Forca('abacaxi'); 
 
 while (!["perdeu", "ganhou"].includes(jogo.buscarEstado())) {
-    const chute = readline.question("Aguardando chute: \n"); //* O usuário escreve o chute e ele é armazenado na const chute
-    jogo.chutar(chute); // * O método chutar é chamado passando a const chute como parâmetro
+    const chute = readline.question("Aguardando chute: \n"); 
+    jogo.chutar(chute); 
 
-
-    console.log(jogo.buscarDadosDoJogo()); // * Depois que a pessoa chutar tem que mostrar os dados
+    console.log(jogo.buscarDadosDoJogo()); 
 }
 
 console.log("você " + jogo.buscarEstado());
