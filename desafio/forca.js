@@ -56,8 +56,8 @@ class Forca {
       return "perdeu"
     } else if (this.estado == "ganhou") {
       return "ganhou"
-    } else if (this.estado == "aguardando estado") {
-      return "aguardando estado"
+    } else if (this.estado == "aguardando chute") {
+      return "aguardando chute"
       }
      
   } // Possiveis valores: "perdeu", "aguardando chute" ou "ganhou"
